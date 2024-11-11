@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Simon Says</title>
 </head>
+
 <body>
     <div class="container">
-        <div class="form">
-            <div id="timer"">
-                <span id="counter">30</span>
-                <p3 id="description">Inserisci tutti i numeri che ricordi in qualsiasi ordine</p3>
+        <div id="timer"">
+            <span id="counter">30</span>
+            <p3 id="description">Inserisci tutti i numeri che ricordi in qualsiasi ordine</p3>
+        </div>
+        <div id="game">
+            <div class="card">1</div>
+            <div class="card">1</div>
+            <div class="card">1</div>
+            <div class="card">1</div>
+            <div class="card">1</div>
+        </div>
+        <form action="">
+            <div id="input">
+                <input type="text" class="user-num">
+                <input type="text" class="user-num">
+                <input type="text" class="user-num">
+                <input type="text" class="user-num">
+                <input type="text" class="user-num">
             </div>
-            <div id="game">
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
-                <div class="card">1</div>
-            </div>
-            <div id="result">
-
-            </div>
-
+            <button>Gioca</button>
+        </form>
+        <div id="result">
 
         </div>
     </div>
@@ -31,4 +39,5 @@
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>

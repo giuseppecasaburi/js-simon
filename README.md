@@ -27,7 +27,7 @@ Non vi preoccupate per eventuali numeri ripetuti.
 1. Generare 5 numeri casuali in un range tra 1 e 99 e renderli visibili in pagina;
 2. Impostare un timer di 30 secondi, al termine del quale i numeri spariranno e verranno sostituiti da 5 caselle vuote di input nel quale l'utente dovrà inserire i numeri da indovinare;
 3. Verificare che l'utente abbia inserito effettivamente dei numeri e, se non lo ha fatto bloccare l'esecuzione e far apparire un alert; 
-4. Dopo che l'utente ha inserito i 5 numeri, sviluppare l'algoritmo di confronto tra i numeri casuali e i numeri inseriti dall'utente.
+4. Dopo aver convalidato i numeri dell'utente, attraverso un algoritmo di confronto tra i numeri verifica se e quanti numeri ha indovinato l'utente.
 
 ## Output
 Stampare a schermo quanti numeri sono stati indovinati e quali, inserendo una frase adeguata.
