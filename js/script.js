@@ -1,15 +1,16 @@
-// GENERATORE DI NUMERI CASUALI
-let randNum = [""];
+// ELEMENTI NECESSARI
+const cardElm = document.querySelectorAll(".card");
+const counterElm = document.getElementById("counter");
 
+// GENERATORE DI NUMERI CASUALI
 for (let i = 0; i < 5; i++) {
     const curRandNum = Math.floor(Math.random() * (99) + 1);
-    randNum += `${curRandNum}, `;
+    cardElm[i].innerHTML = curRandNum;
 }
-console.log(randNum);
+
 
 // TIMER
-const counterElm = document.getElementById("counter");
-let i = 30;
+let i = 5;
 
 const currElm = setInterval(function(){
     if (i > 0) {
@@ -17,10 +18,16 @@ const currElm = setInterval(function(){
         i --;
     } else {
         counterElm.innerHTML = "Tempo scaduto!";
+        cardElm.forEach(function(card) {
+            card.classList.add("hidden");
+        });
+        
         clearInterval(currElm);
     }
-    
 }, 1000);
+
+
+
 
 
 
